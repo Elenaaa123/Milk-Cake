@@ -7,13 +7,101 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
-  background-color: #404040;
+.site-container {
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+.navbar {
+  background-color: rgb(245, 221, 225);
+}
+
+.btn,
+.btn-outline-primary {
+  background-color: white;
+  color: black;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+
+  margin: 10px;
+  height: auto;
+  position: relative;
+}
+
+.rating span {
+  color: rgb(244, 142, 159);
+}
+.product {
+  margin: 1rem;
+}
+
+.product-info {
   padding: 1rem;
 }
 
-header a {
-  color: #ffffff;
+.img-large {
+  max-width: 100%;
+}
+
+.img-thumbnail {
+  height: 80px;
+}
+
+.small-container {
+  max-width: 600px;
+}
+
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
+}
+
+/*sidebar*/
+.navbar-brand {
   font-weight: bold;
-  text-decoration: none;
+  color: white;
+}
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: rgb(245, 221, 225);
+  transition: 0.5s;
+  color: white;
+}
+
+.side-navbar a {
+  color: white;
+}
+
+.side-navbar a:hover {
+  color: grey;
+}
+.site-container {
+  transition: 0.4s;
+}
+
+.active-cont {
+  margin-left: 240px;
+}
+
+.active-nav {
+  left: 0;
+}
+
+button.thumbnail {
+  padding: 0;
 }

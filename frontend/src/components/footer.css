@@ -1,0 +1,51 @@
+.container2 {
+  display: flex;
+  background-color: rgb(245, 221, 225);
+}
+
+@media screen and (max-width: 640px) {
+  .container2 {
+    flex-direction: column;
+  }
+}
+
+.leftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.desc p {
+  margin: 20px 0px;
+}
+
+.socialContainer {
+  display: flex;
+}
+
+.centerContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.listItem {
+  width: 50%;
+  margin-bottom: 10px;
+}
+.centerContainer a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 380px) {
+  .centerContainer {
+    display: none;
+  }
+}
+
+.rightContainer {
+  flex: 1;
+  padding: 20px;
+}
